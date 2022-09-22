@@ -172,7 +172,7 @@ address {
   line-height: inherit;
 }
 
-li::marker {
+li.vacancy::marker {
   content: counter(list-item) ". ";
   color: darkblue;
 }
