@@ -1,6 +1,6 @@
 import sqlite3
 
-con = sqlite3.connect("hh.sqlite3")
+con = sqlite3.connect("orm_db.sqlite")
 cur = con.cursor()
 
 cur.execute('delete from save_data')
