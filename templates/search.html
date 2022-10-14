@@ -55,16 +55,14 @@
         </div>
         <div class="container">
             {% for item in data %}
-                <br/>
-                <li>
-                    {% for each in item %}
-                        {% if each != '' %}
-                            {{each}}<br/>
-                        {% endif %}
-                    {% endfor %}
+                <br>
+                <li class="vacancy">
+                    {{item[1]}}<br>
+                    {{item[2]}}<br>
+                    Занятость: {{item[3]}}<br>
+                    З/п: от {{item[5]}} {{item[4]}} до {{item[6]}} {{item[4]}}<br>
                 </li>
             {% endfor %}
-<!--            {{data}}-->
         </div>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
