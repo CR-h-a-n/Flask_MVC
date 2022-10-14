@@ -57,16 +57,10 @@
             {% for item in data %}
                 <br>
                 <li class="vacancy">
-                    {{item[0]}}<br>
                     {{item[1]}}<br>
-                    Занятость: {{item[2]}}<br>
-                    З/п: от {{item[4]}} {{item[3]}} до {{item[5]}} {{item[3]}}<br>
-                    Требования:
-                    {% if item[6]==None %}
-                        ---
-                    {% else %}
-                        {{item[6]}}
-                    {% endif %}
+                    {{item[2]}}<br>
+                    Занятость: {{item[3]}}<br>
+                    З/п: от {{item[5]}} {{item[4]}} до {{item[6]}} {{item[4]}}<br>
                 </li>
             {% endfor %}
         </div>
